@@ -1,6 +1,6 @@
 {
   "name": "chuck-norris-jokes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Chuck Norris jokes api",
   "main": "index.js",
   "scripts": {
