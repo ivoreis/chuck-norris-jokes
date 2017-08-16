@@ -1,8 +1,7 @@
-# TvMaze
+# Chuck Norris API
 
-**TvMaze API wrapper for Node.js, featuring:**
+**Chuck Norris API wrapper for Node.js, featuring:**
 
-* [TvMaze api methods](http://www.tvmaze.com/api)
 * Promises
 
 
@@ -12,67 +11,24 @@
 
 ```js
 
-npm install tvmaze.com
+npm install chuck-norris-jokes
 
 ```
 
 ### Initialize
 
 ```js
-const TVMaze = require('tvmaze.com');
+const chuck = require('chuck-norris-jokes');
 
-const tvmaze = new TVMaze();
-
-tvmaze
-  .getPopulars()
-  .then(data =>
-    data.map(
-      show => ({
-        name: show.name,
-        status: show.status,
-        rating: show.rating.average,
-      })
-    )
-  )
+chuck
+  .hitme()
   .then(console.log.bind(console));
 
 ```
 
 ## Methods
 
-* **searchShow(name)**
-
-* **searchPeople(name)**
-
-* **getShow(showId, embed)**
-
-* **getPeople(id, embed)**
-
-* **lookupShow(params)**
-
-* **schedule({ country, date })**
-
-* **getCastCredits(id, embed)**
-
-* **getCrewCredits(id, embed)**
-
-* **getShowSeasons(showId)**
-
-* **getShowSeasonEpisodes(showId, season)**
-
-* **getShowSeasonEpisode(showId, season, number)**
-
-* **getEpisodes(showId)**
-
-* **getEpisodeById(episodeId)**
-
-* **getCast(showId)**
-
-* **getCrew(showId)**
-
-* **getUpdates()**
-
-* **getPopulars(limit)**
+* **hitme()**
 
 ## License
 
